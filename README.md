@@ -1,2 +1,2 @@
 # swali.github.io
-swali github, wedding website
+Rashna and Sandeep's wedding website
