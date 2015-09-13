@@ -1,30 +1,60 @@
 
 (function() {
-	var imageCount = 1;
-	var total = 4;
+	var imageCount = 0,
+		total = 4,
+		interval;
 
 	//run this everytime arrow is clicked
 	function slide(x) {
-		var image;
-
-		if ((imageCount + x) < 1 || (imageCount + x) > total) return;
-		image = document.getElementById("image");
 		imageCount = imageCount + x;
-		document.querySelector("#sliderContainer #image").style.backgroundImage = "url('images/slider/" + imageCount + ".jpg')"
+		if (imageCount < 0) {
+			imageCount = total - 1;
+		} else if (imageCount >= total) {
+			imageCount = 0;
+		}
+
+		document.getElementById("sliderImagesContainer").style.left = "-" + (100 * (imageCount)) + "vw";
 	}
 
 	document.addEventListener('DOMContentLoaded', function() {
+		initializeSlider();
+	}, false);
+
+	function initializeSlider () {
 		var leftArrow = document.getElementById("leftArrow");
 		var rightArrow = document.getElementById("rightArrow");
 
 		leftArrow.addEventListener("click", function() {
 			slide(-1);
+			stopTimer();
 		}, false);
 
 		rightArrow.addEventListener("click", function() {
 			slide(1);
+			stopTimer();
 		}, false);
 
+		createSliderImageContainers();
 
-	}, false);
+		interval = setInterval(function () {
+			slide(1);
+		}, 2000)
+	}
+
+	function stopTimer () {
+		clearInterval(interval);
+	}
+
+	function createSliderImageContainers () {
+		var imageElement,
+			sliderImagesContainer = document.querySelector("#sliderImagesContainer");
+
+		for (var i = 0; i < total; i++) {
+			imageElement = document.createElement("div");
+			imageElement.className = "image";
+			imageElement.style.backgroundImage = "url('images/slider/" + i + ".jpg')";
+
+			sliderImagesContainer.appendChild(imageElement);
+		};
+	}
 })();
