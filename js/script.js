@@ -1,7 +1,7 @@
 
 (function() {
 	var imageCount = 0,
-		total = 4,
+		total = 6,
 		interval;
 
 	//run this everytime arrow is clicked
