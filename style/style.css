@@ -35,27 +35,25 @@ SECTION {
 #heartContainer {
 	position: relative;
 	vertical-align: top !important;
+	width: 20%;
 }
 #heart {
-	background-image: url("../images/heart.svg");
+	background-image: url("../images/heart.png");
     position: absolute;
-    height: 400px;
-    width: 295px;
+    height: 300%;
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-    top: -44px;
-    left: -20%;
 }
 #heartText {
     position: absolute;
     color: black;
-    height: 200px;
     width: 100%;
-    top: 38px;
+    top: 21px;
     vertical-align: middle;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 3vw;
 }
 .verticalAlignCenter {
 	position: relative;
