@@ -4,6 +4,14 @@
 		total = 6,
 		interval;
 
+	function controlNavigationShadow() {
+	    if (document.body.scrollTop > 0) {
+	        document.getElementById("nav").className = "active";
+	    } else {
+	        document.getElementById("nav").className = "";
+	    }
+	}
+
 	//run this everytime arrow is clicked
 	function slide(x) {
 		imageCount = imageCount + x;
@@ -15,10 +23,6 @@
 
 		document.getElementById("sliderImagesContainer").style.left = "-" + (100 * (imageCount)) + "vw";
 	}
-
-	document.addEventListener('DOMContentLoaded', function() {
-		initializeSlider();
-	}, false);
 
 	function initializeSlider () {
 		var leftArrow = document.getElementById("leftArrow");
@@ -57,4 +61,11 @@
 			sliderImagesContainer.appendChild(imageElement);
 		};
 	}
+
+	document.addEventListener('DOMContentLoaded', function() {
+		initializeSlider();
+	}, false);
+	window.addEventListener("scroll", function() {
+		controlNavigationShadow();
+	}, false);
 })();

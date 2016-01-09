@@ -12,7 +12,6 @@ SECTION {
 	table-layout: fixed;
 	height: 60px;
 	background-color: rgba(255, 255, 255, 0.3);
-	border-bottom: 5px solid rgb(192, 57, 43);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -31,6 +30,9 @@ SECTION {
 }
 #nav a:hover {
 	text-decoration: underline;
+}
+#nav.active {
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
 }
 #heartContainer {
 	position: relative;
