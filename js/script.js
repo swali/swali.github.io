@@ -42,7 +42,7 @@
 
 		interval = setInterval(function () {
 			slide(1);
-		}, 5000)
+		}, 5000);
 	}
 
 	function stopTimer () {
@@ -57,9 +57,8 @@
 			imageElement = document.createElement("div");
 			imageElement.className = "image";
 			imageElement.style.backgroundImage = "url('images/slider/" + i + ".jpg')";
-
 			sliderImagesContainer.appendChild(imageElement);
-		};
+		}
 	}
 
 	document.addEventListener('DOMContentLoaded', function() {
@@ -68,4 +67,5 @@
 	window.addEventListener("scroll", function() {
 		controlNavigationShadow();
 	}, false);
+
 })();
