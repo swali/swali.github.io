@@ -114,26 +114,40 @@ SECTION {
 }
 #countdownContainer {
 	position: absolute;
-	border: 2px solid gray;
-	border-radius: 10px;
-	padding: 15px 10px;
-	left: 20%;
-	right: 20%;
-	bottom: 10%;
-	height: 80px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    left: 20%;
+    right: 20%;
+    bottom: 10px;
+    height: 175px;
     text-align: center;
-    color: rgba(0,0,0,0.75);
-    background-color: rgba(255,255,255,0.5);
-    font-weight: 700;
-	font-family: Arial;
+    font-family: Arial;
+    color: rgba(255,255,255,0.8);
 }
 #countdownCounterContainer {
-	font-size: 30px;
+	font-size: 15px;
 }
 #countdownRemaining {
-	font-size: 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 10px;
 }
 .counter {
-	font-size: 40px;
-	color: rgba(0,0,0,0.8);
+    font-size: 45px;
+    color: rgba(255,255,255,0.9);
+    margin-top: 25px;
+}
+.counterContainer {
+	display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.7);
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    margin-right: 5px;
 }
