@@ -6,10 +6,21 @@ body {
  	margin: 0;
 	overflow-x: hidden;
     background-color: lavenderblush;
+    font-family: Arial;
+}
+section:not(:first-of-type) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding: 0 30px;
 }
 section:not(:first-of-type) h3 {
 	text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+}
+section h4 {
+	margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .verticalAlignCenter {
@@ -162,37 +173,22 @@ section:not(:first-of-type) h3 {
     margin-right: 5px;
 }
 
-#storyFrame {
-	background-image: url("../images/story/pictureFrame.png");
-    width: 935px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+/* Story */
+#storyContent {
+    width: 640px;
+    /*height: 600px;*/
     margin: 0 auto;
 }
-#storyContent {
-	width: 100%;
-    height: 100%;
-    display: table;
-    padding: 132px;
-}
-/*#story h3 {
-	text-align: center;
-    font-size: 40px;
-}*/
 .storyPart {
+	width: 300px;
 	display: table-cell;
-	height: 100%;
-	width: 25%;
-	background-size: contain;
-	background-repeat: no-repeat;
 	margin: auto;
-	padding: 0 10px;
+	padding: 0 20px;
+}
+.storyPart img {
+	width: 300px;
+	padding-bottom: 10px;
 }
 .storyPart:nth-of-type(1) {
-	background-image: url("../images/story/rashnaPortrait.jpg")
-}
-.storyPart:nth-of-type(4) {
-	background-image: url("../images/story/sandeepPortrait.jpg")
+	border-right: 1px solid grey;
 }
