@@ -86,6 +86,12 @@ section h4 {
     top: 5px;
 }
 
+@Media (max-width: 1000px) {
+	#nav {
+		display: none;
+	}
+}
+
 /* Slider */
 #sliderContainer {
 	height: 100vh;
@@ -138,15 +144,15 @@ section h4 {
 	position: absolute;
     border-radius: 10px;
     padding: 15px 10px;
-    left: 20%;
-    right: 20%;
+    left: 50%;
+    margin-left: -270px;
     bottom: 10px;
     text-align: center;
     font-family: Arial;
     color: rgba(255,255,255,0.8);
 }
 #countdownCounterContainer {
-	font-size: 15px;
+	font-size: 20px;
 }
 #countdownRemaining {
     font-size: 20px;
@@ -166,17 +172,64 @@ section h4 {
 	display: inline-block;
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px solid rgba(255,255,255,0.7);
     overflow: hidden;
     background-color: rgba(0,0,0,0.5);
     margin-right: 5px;
 }
 
+@Media (max-width: 1000px) {
+	.counter {
+		font-size: 30px;
+		margin-top: 16px;
+	}
+
+	#countdownContainer {
+		margin-left: -185px;
+	}
+
+	.counterContainer {
+		width: 80px;
+		height: 80px;
+	}
+
+	#countdownCounterContainer {
+		font-size: 13px;
+	}
+
+	#countdownRemaining {
+	    font-size: 14px;
+	}
+}
+
+@Media (max-width: 700px) {
+	.counter {
+		font-size: 20px;
+		margin-top: 11px;
+	}
+
+	#countdownContainer {
+		margin-left: -130px;
+	}
+
+	.counterContainer {
+		width: 53px;
+		height: 53px;
+	}
+
+	#countdownCounterContainer {
+		font-size: 9px;
+	}
+
+	#countdownRemaining {
+	    font-size: 10px;
+	}
+}
+
 /* Story */
 #storyContent {
     width: 640px;
-    /*height: 600px;*/
     margin: 0 auto;
 }
 .storyPart {
