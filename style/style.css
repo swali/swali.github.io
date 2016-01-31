@@ -11,7 +11,7 @@ body {
 section:not(:first-of-type) {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    max-width: 800px;
     padding: 0 30px;
 }
 section:not(:first-of-type) h3 {
@@ -229,11 +229,11 @@ section h4 {
 
 /* Story */
 #storyContent {
-    width: 640px;
+    width: 840px;
     margin: 0 auto;
 }
 .storyPart {
-	width: 300px;
+	width: 400px;
 	display: table-cell;
 	margin: auto;
 	padding: 0 20px;
@@ -244,4 +244,22 @@ section h4 {
 }
 .storyPart:nth-of-type(1) {
 	border-right: 1px solid grey;
+}
+
+@Media (max-width: 1000px) {
+	.storyPart {
+		display: inherit;
+		margin-bottom: 50px;
+		width: 100%;
+		max-width: 400px;
+		padding: 0;
+	}
+
+	.storyPart:nth-of-type(1) {
+		border-right: none;
+	}
+
+	#storyContent {
+		width: 100%;
+	}
 }
