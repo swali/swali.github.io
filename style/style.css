@@ -5,18 +5,20 @@ body {
 	height: 100%;
  	margin: 0;
 	overflow-x: hidden;
-    background-color: lavenderblush;
-    font-family: Arial;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(100, 100, 150);
 }
 section:not(:first-of-type) {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding: 0 30px;
+    padding: 60px 30px 0 30px;
 }
 section:not(:first-of-type) h3 {
-	text-align: center;
     font-size: 30px;
+    font-style: italic;
+    color: rgb(16, 117, 204);
 }
 section h4 {
 	margin-bottom: 5px;
@@ -59,7 +61,7 @@ section h4 {
 	float: left
 }
 #nav a {
-	color: black;
+	color: rgb(16, 117, 204);
 	text-decoration: none;
 	vertical-align: sub;
 	font-size: 0.85em;
@@ -236,30 +238,71 @@ section h4 {
 	width: 400px;
 	display: table-cell;
 	margin: auto;
-	padding: 0 20px;
 }
 .storyPart img {
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 	padding-bottom: 10px;
 }
 .storyPart:nth-of-type(1) {
 	border-right: 1px solid grey;
+    text-align: left;
+    padding-right: 70px;
+}
+.storyPart:nth-of-type(2) {
+	padding-left: 70px;
+	text-align: right;
+}
+#asToldBy {
+	font-size: 15px;
 }
 
 @Media (max-width: 1000px) {
 	.storyPart {
 		display: inherit;
-		margin-bottom: 50px;
+		margin: 0 0 50px 0;
 		width: 100%;
-		max-width: 400px;
 		padding: 0;
+		max-width: 600px;
+    	min-height: 350px;
+	}
+
+	.storyPart img {
+		float: left;
+	    padding: 0 25px 15px 0;
 	}
 
 	.storyPart:nth-of-type(1) {
 		border-right: none;
+	    padding: 0;
+	}
+
+	.storyPart:nth-of-type(2) {
+		padding-left: 0;
+		text-align: left;
 	}
 
 	#storyContent {
 		width: 100%;
+	}
+}
+
+@Media (max-width: 600px) {
+	.storyPart img {
+		float: inherit;
+	}
+}
+
+/* Proposal */
+#proposal>img {
+	width: 100%;
+	max-width: 400px;
+	float: left;
+    padding: 0 15px 15px 0;
+}
+
+@Media (max-width: 750px) {
+	#proposal>img {
+		float: inherit;
 	}
 }
