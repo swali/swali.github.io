@@ -1,3 +1,13 @@
+/* Fonts */
+@font-face {
+    font-family: "Circle_Semi";
+    src: url(../font/Cicle_Semi.ttf);
+}
+@font-face {
+    font-family: "Engagement-Regular";
+    src: url(../font/Engagement-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +17,6 @@ body {
 	overflow-x: hidden;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
-    color: rgb(100, 100, 150);
 }
 section:not(:first-of-type) {
     margin-left: auto;
@@ -16,9 +25,8 @@ section:not(:first-of-type) {
     padding: 60px 30px 0 30px;
 }
 section:not(:first-of-type) h3 {
-    font-size: 30px;
-    font-style: italic;
-    color: rgb(16, 117, 204);
+    font-size: 48px;
+    font-family: "Engagement-Regular";
 }
 section h4 {
 	margin-bottom: 5px;
@@ -27,7 +35,7 @@ section h4 {
 
 .verticalAlignCenter {
 	position: relative;
-	top: 50%;
+	top: 87%;
 	transform: translateY(-50%);
  	-webkit-transform: translateY(-50%);
  	-moz-transaform: translateY(-50%);
@@ -44,7 +52,7 @@ section h4 {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	font-family: 'Bangers', cursive;
+	font-family: 'Circle_Semi';
 	font-size: 1.5em;
 }
 #nav > DIV {
@@ -52,22 +60,24 @@ section h4 {
 	float: right;
 }
 #nav > DIV:nth-child(1) {
-	padding-left: 5%;
+	padding-left: 3%;
 }
 #nav > DIV:nth-child(5) {
-	padding-right: 5%;
+	padding-right: 3%;
 }
 #nav > DIV:nth-child(1), #nav > DIV:nth-child(2), #nav > DIV:nth-child(3) {
 	float: left
 }
 #nav a {
-	color: rgb(16, 117, 204);
 	text-decoration: none;
 	vertical-align: sub;
 	font-size: 0.85em;
-}
+	font-weight: 500;
+    color: #000;
+    border-bottom: 3px solid #fff;
+}  
 #nav a:hover {
-	text-decoration: underline;
+	border-bottom: 3px solid rgba(220,100,100,1);
 }
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
@@ -78,14 +88,11 @@ section h4 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-    z-index: -1;
-    height: 100px;
-    width: 200px;
+    height: 121px;
     left: 0;
     right: 0;
     margin: auto;
-    padding: 27px;
-    top: 5px;
+    width: 30%;
 }
 
 @Media (max-width: 1000px) {
@@ -122,10 +129,10 @@ section h4 {
 	background-size: cover;
 }
 .arrow {
-	width: 45px;
-	height: 45px;
-	background-color: rgba(255, 255, 255, 0.4);
-	border-radius: 22px;
+	width: 75px;
+	height: 75px;
+	background-color: #fff;
+	border-radius: 100px;
 	cursor:pointer;
 }
 #leftHolder {
@@ -151,23 +158,14 @@ section h4 {
     bottom: 10px;
     text-align: center;
     font-family: Arial;
-    color: rgba(255,255,255,0.8);
+    color: #000;
 }
 #countdownCounterContainer {
 	font-size: 20px;
 }
-#countdownRemaining {
-    font-size: 20px;
-    border: 1px solid white;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 5px 30px;
-    background-color: rgba(0,0,0,0.5);
-    margin-top: 10px;
-}
 .counter {
     font-size: 45px;
-    color: rgba(255,255,255,0.9);
+    color: #000;
     margin-top: 25px;
 }
 .counterContainer {
@@ -175,9 +173,8 @@ section h4 {
     width: 120px;
     height: 120px;
     border-radius: 10%;
-    border: 2px solid rgba(255,255,255,0.7);
     overflow: hidden;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #fff;
     margin-right: 5px;
 }
 
@@ -292,7 +289,38 @@ section h4 {
 		float: inherit;
 	}
 }
-
+/* Welcome Text */
+#welcomeText {
+	position: absolute;
+	top: 33%;
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+#welcomeText H1 {
+	font-family: "Engagement-Regular"; 
+	font-size: 99px;
+	font-weight: 400;
+	line-height: 1.1;
+	margin: 0;
+}
+#welcomeText P {
+	font-family: "Circle_Semi"; 
+	font-size: 19px;
+	letter-spacing: 0.4em;
+	line-height: 1.1;
+}
+@Media (max-width: 495px) {
+	#welcomeText {
+		display: none;
+	}
+	#leftHolder {
+		display: none;
+	}
+	#rightHolder {
+		display: none;
+	}
+}
 /* Proposal */
 #proposal>img {
 	width: 100%;

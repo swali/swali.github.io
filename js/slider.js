@@ -1,6 +1,6 @@
 function Slider () {
 	var imageCount = 0,
-		total = 6,
+		total = 5,
 		sliderInterval;
 
 	//run this everytime arrow is clicked
