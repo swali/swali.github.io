@@ -53,19 +53,23 @@ section h4 {
 	z-index: 1;
 	font-family: 'Circle_Semi';
 	font-size: 1.5em;
+	padding: 10px 3%;
 }
-#nav > DIV {
-	padding: 10px 30px;
+#navLeft, #navRight {
+	width: 40%;
+	display: table;
+}
+#navLeft {
+	float: left;
+}
+#navRight {
 	float: right;
+	text-align: right;
 }
-#nav > DIV:nth-child(1) {
-	padding-left: 3%;
-}
-#nav > DIV:nth-child(5) {
-	padding-right: 3%;
-}
-#nav > DIV:nth-child(1), #nav > DIV:nth-child(2), #nav > DIV:nth-child(3) {
-	float: left
+#navLeft > DIV, #navRight > DIV {
+	padding: 0 5px;
+	width: 33%;
+	display: table-cell;
 }
 #nav a {
 	text-decoration: none;
@@ -81,23 +85,44 @@ section h4 {
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
 }
-#nav #heart {
+#heart {
 	background-image: url("../images/heart.png");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-    height: 121px;
+    height: 120px;
     left: 0;
     right: 0;
     margin: auto;
-    width: 30%;
+    width: 20%;
 }
 @Media (max-width: 1000px) {
 	#nav {
-		display: none;
+		font-size: 1.2em;
+		height: 48px;
+	}
+	#heart {
+		height: 96px;
 	}
 }
+@Media (max-width: 700px) {
+	#nav {
+		font-size: 1em;
+	}
+}
+@Media (max-width: 530px) {
+	#nav {
+		font-size: 0.8em;
+		height: 32px;
+	}
+}
+@Media (max-width: 430px) {
+	#nav {
+		font-size: 0.5em;
+	}
+}
+
 /* Slider */
 #sliderContainer {
 	height: 100vh;
