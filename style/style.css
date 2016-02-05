@@ -26,6 +26,7 @@ section:not(:first-of-type) {
 section:not(:first-of-type) h3 {
     font-size: 48px;
     font-family: "Engagement-Regular";
+    text-align: center;
 }
 section h4 {
 	margin-bottom: 5px;
