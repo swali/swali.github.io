@@ -373,3 +373,20 @@ section h4 {
 		float: inherit;
 	}
 }
+
+/* Music */
+#music {
+	position: fixed;
+	top: 75px;
+	right: 20px;
+	height: 50px;
+	width: 50px;
+	z-index: 1;
+	background-color: green;
+	border-radius: 50%;
+	background-image: url("../images/musicIcon.png"); /* Source: https://www.iconfinder.com/icons/87898/music_icon */
+	background-size: 67%;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
