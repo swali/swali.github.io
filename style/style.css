@@ -203,10 +203,10 @@ section:nth-child(odd) {
 }
 #countdownCounterContainer {
 	font-family: "Circle_Semi";
-	font-size: 20px;
+	font-size: 1.1em;
 }
 .counter {
-    font-size: 45px;
+    font-size: 1.75em;
     color: #000;
     margin-top: 1.3em;
 }
@@ -236,7 +236,7 @@ section:nth-child(odd) {
 	}
 
 	#countdownCounterContainer {
-		font-size: 13px;
+		font-size: 1em;
 	}
 
 	#countdownRemaining {
