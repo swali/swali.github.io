@@ -15,11 +15,12 @@ body {
  	margin: 0;
 	overflow-x: hidden;
     background-color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Circle_Semi', 'Open Sans', sans-serif;
 }
 section:not(:first-of-type) {
-    background-color: aliceblue;
+    background-color: #fff;
     padding: 20px 30px 20px 30px;
+    font-size: 1.1em;
 }
 section:not(:first-of-type) .sectionContent {
     margin-left: auto;
@@ -32,12 +33,16 @@ section:not(:first-of-type) h3 {
     font-size: 48px;
     font-family: "Engagement-Regular";
     text-align: center;
+    color: #c8b4a0;
+    font-weight: 100; 
 }
 section h4 {
 	margin-bottom: 5px;
     font-size: 18px;
 }
-
+section:nth-child(odd) {
+	background-color: rgb(246, 244, 242);
+}
 .verticalAlignCenter {
 	position: relative;
 	top: 50%;
@@ -162,7 +167,7 @@ section h4 {
 .arrow {
 	width: 8vmin;
 	height: 8vmin;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 100px;
 	cursor:pointer;
 	bottom: 3%;
@@ -197,12 +202,13 @@ section h4 {
     color: #000;
 }
 #countdownCounterContainer {
+	font-family: "Circle_Semi";
 	font-size: 20px;
 }
 .counter {
     font-size: 45px;
     color: #000;
-    margin-top: 25px;
+    margin-top: 1.3em;
 }
 .counterContainer {
 	display: inline-block;
@@ -210,7 +216,7 @@ section h4 {
     height: 120px;
     border-radius: 10%;
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
     margin-right: 5px;
 }
 
@@ -368,6 +374,10 @@ section h4 {
 	float: left;
     padding: 0 15px 15px 0;
 }
+#proposal p {
+	font-size: 1.03em;
+	padding: 20px 0;
+}
 @Media (max-width: 750px) {
 	#proposal img {
 		float: inherit;
@@ -382,8 +392,11 @@ section h4 {
 	height: 50px;
 	width: 50px;
 	z-index: 1;
-	background-color: green;
 	border-radius: 50%;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
 	background-image: url("../images/musicIcon.png"); /* Source: https://www.iconfinder.com/icons/87898/music_icon */
 	background-size: 67%;
 	background-position: center;
