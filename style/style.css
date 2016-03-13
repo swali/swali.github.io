@@ -170,7 +170,7 @@ section:nth-child(odd) {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 100px;
 	cursor:pointer;
-	bottom: 40px;
+	bottom: 7%;
 	position: absolute;
 }
 #leftHolder {
@@ -225,7 +225,9 @@ section:nth-child(odd) {
 		font-size: 30px;
 		margin-top: 16px;
 	}
-
+	.arrow {
+		bottom: 4%;
+	}
 	#countdownContainer {
 		margin-left: -185px;
 	}
@@ -244,26 +246,30 @@ section:nth-child(odd) {
 	}
 }
 @Media (max-width: 700px), (max-height: 530px) {
+	.arrow {
+		bottom: 9%;
+	}
 	.counter {
 		font-size: 20px;
 		margin-top: 11px;
 	}
-
 	#countdownContainer {
 		margin-left: -130px;
 	}
-
 	.counterContainer {
 		width: 53px;
 		height: 53px;
 	}
-
 	#countdownCounterContainer {
 		font-size: 9px;
 	}
-
 	#countdownRemaining {
 	    font-size: 10px;
+	}
+}
+@Media (max-width: 600px) and (min-height: 380px) {
+	.arrow {
+		bottom: 6%;
 	}
 }
 /* Story */
@@ -388,9 +394,9 @@ section:nth-child(odd) {
 #music {
 	position: fixed;
 	top: 75px;
-	right: 20px;
-	height: 50px;
-	width: 50px;
+	right: 5vw;
+	height: 8vmin;
+	width: 8vmin;
 	z-index: 1;
 	border-radius: 50%;
 	border-width: 0.5px;
