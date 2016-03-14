@@ -449,6 +449,22 @@ section:nth-child(odd) h3 {
 	text-decoration: underline;
 	padding-bottom: 15px;
 }
+/* People */
+.ch-img-1 {
+	background: url("../images/people/ruchi.png");
+}
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
 /* Music */
 #music {
 	position: fixed;
