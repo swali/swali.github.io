@@ -59,7 +59,7 @@ section:nth-child(odd) {
 	display: table;
 	table-layout: fixed;
 	height: 60px;
-	background-color: #fff;
+	background-color: #ff82ab;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -89,11 +89,10 @@ section:nth-child(odd) {
 	vertical-align: sub;
 	font-size: 0.85em;
 	font-weight: 500;
-    color: #000;
-    border-bottom: 3px solid #fff;
+    color: #fff;
 }  
 #nav a:hover {
-	border-bottom: 3px solid rgba(220,100,100,1);
+	border-bottom: 3px solid #fff;
 }
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
