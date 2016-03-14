@@ -393,22 +393,24 @@ section:nth-child(odd) {
 	display: inline-block;
     vertical-align: middle;
 }
- .sectionContent > div {
+ #events > div {
  	display: block;
  	padding-bottom: 25px;
  }
-.sectionContent img {
+#events div > img {
 	display: inline-block;
 	vertical-align: middle;
-	padding-right: 15px;
+	margin-right: 25px;
+	border-radius: 87px;
+	border: 10px solid #ff9fbd;
 }
-.sectionContent span {
+#events span {
 	display: block;
 }
-.sectionContent span > img {
+#events span > img {
 	vertical-align: baseline;
 	height: 15px;
-	padding-right: 5px;
+	padding-right: 7px;
 }
 /* Music */
 #music {
