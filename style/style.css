@@ -41,8 +41,12 @@ section h4 {
     font-size: 18px;
 }
 section:nth-child(odd) {
-	background-color: rgb(246, 244, 242);
+	background-color: #FEF5EE;
+	color: #000;
 }
+section:nth-child(odd) h3 {
+	color: #ff6b81;
+} 
 .verticalAlignCenter {
 	position: relative;
 	top: 50%;
@@ -85,6 +89,7 @@ section:nth-child(odd) {
 	display: table-cell;
 }
 #nav a {
+	text-transform: uppercase;
 	text-decoration: none;
 	vertical-align: sub;
 	font-size: 0.85em;
@@ -378,6 +383,7 @@ section:nth-child(odd) {
 	max-width: 400px;
 	float: left;
     padding: 0 15px 15px 0;
+    border-radius: 80px;
 }
 #proposal p {
 	font-size: 1.03em;
@@ -401,16 +407,26 @@ section:nth-child(odd) {
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 25px;
-	border-radius: 87px;
+	border-radius: 150px;
 	border: 10px solid #ff9fbd;
+	transition: all 0.2s ease-in-out;
+}
+#events div > img:hover {
+	transform: scale(1.05)
 }
 #events span {
 	display: block;
+	padding-bottom: 3px;
 }
 #events span > img {
 	vertical-align: baseline;
 	height: 15px;
 	padding-right: 7px;
+}
+#events h4 {
+	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 15px;
 }
 /* Music */
 #music {
@@ -426,7 +442,7 @@ section:nth-child(odd) {
 	border-color: #fff;
 	background-color: rgba(255, 255, 255, 0.2);
 	background-image: url("../images/musicIcon.png"); /* Source: https://www.iconfinder.com/icons/87898/music_icon */
-	background-size: 67%;
+	background-size: 60%;
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
