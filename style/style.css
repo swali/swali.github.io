@@ -389,7 +389,28 @@ section:nth-child(odd) {
 		float: inherit;
 	}
 }
-
+/* Events */
+.eventInfo {
+	display: inline-block;
+    vertical-align: middle;
+}
+ .sectionContent > div {
+ 	display: block;
+ 	padding-bottom: 25px;
+ }
+.sectionContent img {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 15px;
+}
+.sectionContent span {
+	display: block;
+}
+.sectionContent span > img {
+	vertical-align: baseline;
+	height: 15px;
+	padding-right: 5px;
+}
 /* Music */
 #music {
 	position: fixed;
