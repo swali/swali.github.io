@@ -34,7 +34,17 @@ section:not(:first-of-type) h3 {
     font-family: "Engagement-Regular";
     text-align: center;
     color: #c8b4a0;
-    font-weight: 100; 
+    font-weight: 100;
+}
+section:not(:first-of-type) h3:before {
+    font-family: "Arial", sans-serif;
+    content: '—';
+    padding: 0 10px;
+}
+section:not(:first-of-type) h3:after {
+    font-family: "Arial", sans-serif;
+    content: '—';
+    padding: 0 10px;
 }
 section h4 {
 	margin-bottom: 5px;
@@ -68,8 +78,8 @@ section:nth-child(odd) h3 {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-	font-family: 'Circle_Semi';
-	font-size: 1.5em;
+	font-family: 'Engagement-Regular';
+	font-size: 1.85em;
 	padding: 10px 3%;
 }
 #navLeft, #navRight {
@@ -89,11 +99,8 @@ section:nth-child(odd) h3 {
 	display: table-cell;
 }
 #nav a {
-	text-transform: uppercase;
 	text-decoration: none;
 	vertical-align: sub;
-	font-size: 0.85em;
-	font-weight: 500;
     color: #fff;
 }  
 #nav a:hover {
@@ -112,32 +119,46 @@ section:nth-child(odd) h3 {
     left: 0;
     right: 0;
     margin: auto;
-    width: 20%;
-    top: -10%;
+    width: 23%;
+    top: -2%;
 }
 @Media (max-width: 1000px) {
 	#nav {
-		font-size: 1.2em;
+		font-size: 1.6em;
 		height: 48px;
 	}
 	#heart {
-		height: 96px;
+		width: 27%;
+		top: -2px;
+	}
+}
+@Media (max-width: 800px) {
+	#heart {
+		top: 2px;
 	}
 }
 @Media (max-width: 700px) {
 	#nav {
-		font-size: 1em;
+		font-size: 1.4em;
+	}
+}
+@Media (max-width: 630px) {
+	#heart {
+		top: 9px;
 	}
 }
 @Media (max-width: 530px) {
 	#nav {
-		font-size: 0.8em;
+		font-size: 1.2em;
 		height: 32px;
 	}
 }
 @Media (max-width: 430px) {
 	#nav {
-		font-size: 0.5em;
+		font-size: 1em;
+	}
+	#heart {
+		top: 14px;
 	}
 }
 
