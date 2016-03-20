@@ -30,7 +30,7 @@ section:not(:first-of-type) .sectionContent {
     margin-top: -70px;
 }
 section:not(:first-of-type) h3 {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Engagement-Regular";
     text-align: center;
     color: #c8b4a0;
