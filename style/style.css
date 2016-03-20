@@ -162,6 +162,9 @@ section:nth-child(odd) h3 {
 	#heart {
 		top: 15px;
 	}
+	section:not(:first-of-type) h3 {
+   		font-size: 2.5rem;
+   	}
 }
 
 /* Slider */
@@ -309,6 +312,7 @@ section:nth-child(odd) h3 {
 	display: table-cell;
 	margin: auto;
 	text-align: center;
+	overflow: hidden; /*needed due to float image*/
 }
 .storyPart H4 {
 	font-size: 20px;
@@ -401,6 +405,9 @@ section:nth-child(odd) h3 {
 }
 
 /* Proposal */
+#proposal {
+	text-align: center;
+}
 #proposal img {
 	width: 100%;
 	max-width: 400px;
@@ -409,6 +416,7 @@ section:nth-child(odd) h3 {
     border-radius: 80px;
 }
 #proposal p {
+	text-align: left;
 	font-size: 1.03em;
 	padding: 20px 0;
 }
@@ -421,10 +429,12 @@ section:nth-child(odd) h3 {
 .eventInfo {
 	display: inline-block;
     vertical-align: middle;
+    text-align: left;
 }
  #events > div {
  	display: block;
  	padding-bottom: 25px;
+ 	text-align: center;
  }
 #events div > img {
 	display: inline-block;
@@ -432,6 +442,8 @@ section:nth-child(odd) h3 {
 	margin-right: 25px;
 	border-radius: 150px;
 	border: 10px solid #ff9fbd;
+	width: 100%;
+	max-width: 300px;
 	transition: all 0.2s ease-in-out;
 }
 #events div > img:hover {
@@ -473,7 +485,6 @@ section:nth-child(odd) h3 {
 .ch-item {
     background-size: contain;
     height: 200px;
-    width: 1200px;
     background-repeat: no-repeat;
 }
 .ch-grid {
