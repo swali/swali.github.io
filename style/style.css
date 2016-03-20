@@ -99,15 +99,20 @@ section:nth-child(odd) h3 {
 	display: table-cell;
 }
 #nav a {
-	text-decoration: none;
-	vertical-align: sub;
-    color: #fff;
-}  
+    text-decoration: none;
+    vertical-align: sub;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid #ff82ab;
+}
 #nav a:hover {
 	border-bottom: 3px solid #fff;
 }
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
+}
+#nav a.activeLink {
+    border-bottom: 3px solid #fff;
+    transition: all 0.5s ease;
 }
 #heart {
 	background-image: url("../images/heart.png");
@@ -158,7 +163,7 @@ section:nth-child(odd) h3 {
 		font-size: 1em;
 	}
 	#heart {
-		top: 14px;
+		top: 15px;
 	}
 }
 
@@ -451,7 +456,28 @@ section:nth-child(odd) h3 {
 }
 /* People */
 .ch-img-1 {
+	background: url("../images/people/alok.png");
+}
+.ch-img-2 {
 	background: url("../images/people/ruchi.png");
+}
+.ch-img-3 {
+	background: url("../images/people/annika.png");
+}
+.ch-img-4 {
+	background: url("../images/people/dilip.png");
+}
+.ch-img-5 {
+	background: url("../images/people/sangeeta.png");
+}
+.ch-img-6 {
+	background: url("../images/people/ekta.png");
+}
+.ch-item {
+    background-size: contain;
+    height: 200px;
+    width: 1200px;
+    background-repeat: no-repeat;
 }
 .ch-grid {
 	margin: 20px 0 0 0;
@@ -463,7 +489,10 @@ section:nth-child(odd) h3 {
 	width: 220px;
 	height: 220px;
 	display: inline-block;
-	margin: 20px;
+	margin: 35px 15px;
+}
+.ch-grid li p {
+	margin: 0;
 }
 /* Music */
 #music {
