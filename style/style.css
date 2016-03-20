@@ -104,9 +104,6 @@ section:nth-child(odd) h3 {
     color: rgb(255, 255, 255);
     border-bottom: 3px solid #ff82ab;
 }
-#nav a:hover {
-	border-bottom: 3px solid #fff;
-}
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
 }
