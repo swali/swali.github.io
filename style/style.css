@@ -520,7 +520,7 @@ section:nth-child(odd) h3 {
 	font-size: 1.5em;
 }
 #hashtaginfo > div:nth-child(1)  {
-	line-height: 3;
+	line-height: 1.5;
 	color: #2c2c2c;
     background-color: #ff82ab;
     letter-spacing: .05em;
@@ -545,12 +545,14 @@ section:nth-child(odd) h3 {
 	background-position-y: 10%;
 	background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 400px;
 }
 @Media (max-width: 874px) {
+	#hashtaginfo {
+		font-size: 1em;
+	}
 	#footer {
-		background-size: cover;
+		background-position-x: 54%;
 	}
 }
 /* Music */
