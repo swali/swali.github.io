@@ -17,7 +17,7 @@ function Nav () {
 		var sections = document.querySelectorAll(".sectionContent"),
 			nav = document.querySelector("#nav"),
 				windowPos = window.pageYOffset,
-				navHeight = nav.offsetHeight,
+				navHeight = nav.offsetHeight + 60,
 				//subtract extra 70px overflow padding-top and add 20px top/bottom section padding
 				sliderContainerHeight = document.querySelector("#sliderContainer").offsetHeight, 
 				aboutUsHeight = document.querySelector("#story").offsetHeight - 70 + 40,

@@ -100,9 +100,11 @@ section:nth-child(odd) h3 {
 }
 #nav a {
     text-decoration: none;
-    vertical-align: sub;
     color: rgb(255, 255, 255);
-    border-bottom: 3px solid #ff82ab;
+    background-color: #ff82ab;
+    padding: 5px 10px;
+    border-radius: 15px;
+	border-bottom: 3px solid #ff82ab;
 }
 #nav.active {
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);   
@@ -110,6 +112,7 @@ section:nth-child(odd) h3 {
 #nav a.activeLink {
     border-bottom: 3px solid #fff;
     transition: all 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 #heart {
 	background-image: url("../images/heart.png");
@@ -131,12 +134,12 @@ section:nth-child(odd) h3 {
 	}
 	#heart {
 		width: 27%;
-		top: -2px;
+		top: -10px;
 	}
 }
 @Media (max-width: 800px) {
 	#heart {
-		top: 2px;
+		top: -2px;
 	}
 }
 @Media (max-width: 700px) {
@@ -146,7 +149,7 @@ section:nth-child(odd) h3 {
 }
 @Media (max-width: 630px) {
 	#heart {
-		top: 9px;
+		top: 6px;
 	}
 }
 @Media (max-width: 530px) {
@@ -160,11 +163,16 @@ section:nth-child(odd) h3 {
 		font-size: 1em;
 	}
 	#heart {
-		top: 15px;
+		top: 9px;
 	}
 	section:not(:first-of-type) h3 {
    		font-size: 2.5rem;
    	}
+}
+@Media (max-width: 335px) {
+	#heart {
+		top: 13px;
+	}
 }
 
 /* Slider */
@@ -488,7 +496,7 @@ section:nth-child(odd) h3 {
     background-repeat: no-repeat;
 }
 .ch-grid {
-	margin: 20px 0 0 0;
+	margin: 20px 0 20px 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;
@@ -501,6 +509,49 @@ section:nth-child(odd) h3 {
 }
 .ch-grid li p {
 	margin: 0;
+}
+/*Footer*/
+#footerSection {
+	padding: 0;
+	position: relative;
+}
+#hashtaginfo {
+	text-align: center;
+	font-size: 1.5em;
+}
+#hashtaginfo > div:nth-child(1)  {
+	line-height: 3;
+	color: #2c2c2c;
+    background-color: #ff82ab;
+    letter-spacing: .05em;
+    padding: 10px;
+}
+#hashtaginfo strong, #copyrightinfo strong {
+	color: #fff;
+}
+#footerSection #copyrightinfo {
+	text-align: center;
+    font-size: 0.45em;
+    font-weight: 420;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #ff82ab;
+    padding: 10px;
+    opacity: 0.6;
+}
+#footer {
+	background-image: url("../images/footer.png");
+	background-position-y: 10%;
+	background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+@Media (max-width: 874px) {
+	#footer {
+		background-size: cover;
+	}
 }
 /* Music */
 #music {
@@ -521,7 +572,6 @@ section:nth-child(odd) h3 {
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
-
 /* Slide in */
 .sectionContent:not(#story) {
 	opacity: 0;
