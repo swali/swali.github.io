@@ -517,7 +517,7 @@ section:nth-child(odd) h3 {
 }
 #hashtaginfo {
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 #hashtaginfo > div:nth-child(1)  {
 	line-height: 1.5;
@@ -541,18 +541,28 @@ section:nth-child(odd) h3 {
     opacity: 0.6;
 }
 #footer {
-	background-image: url("../images/footer.png");
-	background-position-y: 10%;
+	background-image: url("../images/footer/footer.png");
 	background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    background-position: center;
+    height: 415px;
+	text-align: center;
+}
+#footer #imgtext {
+	top: 210px;
+    position: relative;
+    font-family: 'Engagement-Regular';
+    color: rgba(255, 255, 255, 0.95);
+}
+#footer #imgtext > div {
+	font-size: 2em;
+}
+#footer img {
+    width: 250px;
 }
 @Media (max-width: 874px) {
 	#hashtaginfo {
 		font-size: 1em;
-	}
-	#footer {
-		background-position-x: 54%;
 	}
 }
 /* Music */
