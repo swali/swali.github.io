@@ -21,6 +21,7 @@ section:not(:first-of-type) {
     background-color: #fff;
     padding: 20px 30px 20px 30px;
     font-size: 1.1em;
+    overflow-x: hidden;
 }
 section:not(:first-of-type) .sectionContent {
     margin-left: auto;
