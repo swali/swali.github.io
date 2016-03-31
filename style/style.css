@@ -221,7 +221,7 @@ section:nth-child(odd) h3 {
     padding: 15px 10px;
     left: 50%;
     margin-left: -330px;
-    bottom: 10px;
+    bottom: 25px;
     text-align: center;
     font-family: Arial;
     color: #000;
@@ -569,7 +569,7 @@ section:nth-child(odd) h3 {
 }
 @Media (max-width: 460px) {
 	#music {
-		bottom: 7px;
+		bottom: 20px;
 	}
 }
 /* Slide in */
