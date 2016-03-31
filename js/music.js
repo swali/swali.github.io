@@ -12,7 +12,7 @@ function MusicPlayer() {
 	function toggleMusic() {
 		if (!audioControl.paused) {
 			audioControl.pause();
-			audioContainer.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+			audioContainer.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
 		} else {
 			audioControl.play();
 			audioContainer.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
