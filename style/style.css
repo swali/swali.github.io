@@ -207,20 +207,25 @@ section:nth-child(odd) h3 {
 /* Countdown */
 #leftHolder, #rightHolder {
     display: inline-block;
-    vertical-align: super;
+    vertical-align: middle;
+}
+#leftHolder img, #rightHolder img {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
 }
 #leftHolder {
-	padding-right: 5px;
+	padding-right: 25px;
 }
 #rightHolder {
-    padding-left: 5px;
+    padding-left: 25px;
 }
 #countdownContainer {
 	position: absolute;
     border-radius: 10px;
     padding: 15px 10px;
     left: 50%;
-    margin-left: -330px;
+    margin-left: -345px;
     bottom: 25px;
     text-align: center;
     font-family: Arial;
@@ -230,6 +235,7 @@ section:nth-child(odd) h3 {
 	font-family: "Circle_Semi";
 	font-size: 1.1em;
 	display: inline-block;
+	vertical-align: middle;
 }
 .counter {
     font-size: 1.75em;
@@ -254,7 +260,7 @@ section:nth-child(odd) h3 {
 		margin-top: 16px;
 	}
 	#countdownContainer {
-		margin-left: -245px;
+		margin-left: -250px;
 	}
 	.counterContainer {
 		width: 80px;
@@ -279,7 +285,7 @@ section:nth-child(odd) h3 {
 		margin-top: 11px;
 	}
 	#countdownContainer {
-		margin-left: -165px;
+		margin-left: -164px;
 	}
 	.counterContainer {
 		width: 53px;
@@ -290,6 +296,12 @@ section:nth-child(odd) h3 {
 	}
 	#countdownRemaining {
 	    font-size: 10px;
+	}
+	#leftHolder {
+		padding-right: 5px;
+	}
+	#rightHolder {
+	    padding-left: 5px;
 	}
 }
 
@@ -551,7 +563,7 @@ section:nth-child(odd) h3 {
 /* Music */
 #music {
 	position: fixed;
-	bottom: 48px;
+	bottom: 28px;
 	right: 5vw;
 	height: 6vmin;
 	width: 6vmin;
