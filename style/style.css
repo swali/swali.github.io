@@ -536,7 +536,7 @@ section:nth-child(odd) h3 {
     opacity: 0.6;
 }
 #footer {
-	background-image: url("../images/footer/footer.png");
+	background-image: url("../images/footer/footer.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
