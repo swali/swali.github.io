@@ -485,6 +485,33 @@ section:nth-child(odd) h3 {
 .ch-img-6 {
 	background: url("../images/people/ekta.png");
 }
+.ch-img-7 {
+	background: url("../images/people/ashita.png");
+}
+.ch-img-8 {
+	background: url("../images/people/pauline.png");
+}
+.ch-img-9 {
+	background: url("../images/people/anannya.png");
+}
+.ch-img-10 {
+	background: url("../images/people/sonya.png");
+}
+.ch-img-11 {
+	background: url("../images/people/dimka.png");
+}
+.ch-img-12 {
+	background: url("../images/people/isha.png");
+}
+.ch-img-13 {
+	background: url("../images/people/zooni.png");
+}
+.ch-img-14 {
+	background: url("../images/people/shaka.png");
+}
+.ch-img-15 {
+	background: url("../images/people/supriya.png");
+}
 .ch-item {
     background-size: contain;
     height: 200px;
